@@ -14,10 +14,10 @@ const Teams = () => {
               <div className="lg:flex flex-row items-center">
                 <div className="grow-0 shrink-0 basis-auto w-full lg:w-5/12 lg:pr-6">
                   <img
-                      src="https://mdbootstrap.com/img/new/avatars/2.jpg"
-                      alt="Trendy Pants and Shoes"
-                      className="w-full rounded-md mb-6 lg:mb-0"
-                      />
+                    src="https://mdbootstrap.com/img/new/avatars/2.jpg"
+                    alt="Trendy Pants and Shoes"
+                    className="w-full rounded-md mb-6 lg:mb-0"
+                  />
                 </div>
                 <div className="grow-0 shrink-0 basis-auto w-full lg:w-7/12">
                   <h5 className="text-lg font-bold mb-2">Luthfi Sulistiyo</h5>
@@ -35,7 +35,10 @@ const Teams = () => {
                         />
                       </svg>
                     </a>
-                    <a href="https://www.linkedin.com/in/luthfisulistiyo/" className="px-2">
+                    <a
+                      href="https://www.linkedin.com/in/luthfisulistiyo/"
+                      className="px-2"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 448 512"
@@ -58,16 +61,16 @@ const Teams = () => {
               <div className="lg:flex flex-row items-center">
                 <div className="grow-0 shrink-0 basis-auto w-full lg:w-5/12 lg:pr-6">
                   <img
-                      src="https://mdbootstrap.com/img/new/avatars/2.jpg"
-                      alt="Trendy Pants and Shoes"
-                      className="w-full rounded-md mb-6 lg:mb-0"
-                      />
+                    src="https://mdbootstrap.com/img/new/avatars/2.jpg"
+                    alt="Trendy Pants and Shoes"
+                    className="w-full rounded-md mb-6 lg:mb-0"
+                  />
                 </div>
                 <div className="grow-0 shrink-0 basis-auto w-full lg:w-7/12">
                   <h5 className="text-lg font-bold mb-2">Muhammad Azhar</h5>
                   <p className="text-gray-500 mb-4">CFO</p>
                   <ul className="list-inside flex mx-auto justify-center lg:justify-start">
-                  <a href="#!" className="px-2">
+                    <a href="#!" className="px-2">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 448 512"
@@ -102,10 +105,10 @@ const Teams = () => {
               <div className="lg:flex flex-row items-center">
                 <div className="grow-0 shrink-0 basis-auto w-full lg:w-5/12 lg:pr-6">
                   <img
-                      src="https://mdbootstrap.com/img/new/avatars/2.jpg"
-                      alt="Trendy Pants and Shoes"
-                      className="w-full rounded-md mb-6 lg:mb-0"
-                      />
+                    src="https://mdbootstrap.com/img/new/avatars/2.jpg"
+                    alt="Trendy Pants and Shoes"
+                    className="w-full rounded-md mb-6 lg:mb-0"
+                  />
                 </div>
                 <div className="grow-0 shrink-0 basis-auto w-full lg:w-7/12">
                   <h5 className="text-lg font-bold mb-2">Bikry Akid</h5>
