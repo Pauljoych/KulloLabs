@@ -2,14 +2,7 @@ import React from 'react'
 import { useMoralis } from 'react-moralis'
 
 const Card = () => {
-  const {
-    authenticate,
-    isAuthenticated,
-    isAuthenticating,
-    user,
-    account,
-    logout,
-  } = useMoralis()
+  const isAuthenticated = true
 
   return (
     <div className="items-center p-8 w-96 cursor-pointer rounded-3xl shadow-lg bg-white transition duration-400 ease-in-out hover:scale-105 hover:drop-shadow-2xl">

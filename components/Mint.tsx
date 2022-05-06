@@ -1,16 +1,9 @@
 import React from 'react'
-import { useMoralis } from 'react-moralis'
+
+type ChainType = 'bsc testnet'
 
 const Mint = () => {
-  const {
-    authenticate,
-    isAuthenticated,
-    isAuthenticating,
-    user,
-    account,
-    logout,
-  } = useMoralis()
-
+  const isAuthenticated = true
   return (
     <div className="items-center p-8 w-96 cursor-pointer rounded-3xl shadow-lg bg-white transition duration-300 ease-in-out hover:scale-105 hover:drop-shadow-2xl">
       <div className="text-center">
@@ -23,7 +16,7 @@ const Mint = () => {
           </button>
         ) : (
           <button className="rounded-xl bg-blue-600 hover:bg-blue-700 px-24 py-2 text-white">
-            Stake
+            Mint
           </button>
         )}
       </div>
