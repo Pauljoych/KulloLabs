@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Card from '../components/Card'
+import Staking from '../components/Staking'
 import Footer from '../components/Footer'
 import Mint from '../components/Mint'
 import Navbar from '../components/Navbar'
@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       <Navbar />
       <div className="grid place-items-center py-8 gap-4">
         <Mint />
-        <Card />
+        <Staking />
       </div>
       <Teams />
       <Footer />
