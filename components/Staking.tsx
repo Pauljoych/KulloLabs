@@ -1,8 +1,7 @@
-import React from 'react'
-import { useMoralis } from 'react-moralis'
+import React from "react";
 
-const Card = () => {
-  const isAuthenticated = true
+const Staking = () => {
+  const isAuthenticated = true;
 
   return (
     <div className="items-center p-8 w-96 cursor-pointer rounded-3xl shadow-lg bg-white transition duration-400 ease-in-out hover:scale-105 hover:drop-shadow-2xl">
@@ -34,17 +33,17 @@ const Card = () => {
       </div>
       <div className="text-center">
         {!isAuthenticated ? (
-          <button className="rounded-xl bg-blue-400 px-24 py-2 text-white">
+          <button className="rounded-xl font-bold bg-blue-400 px-24 py-2 text-white">
             Disconected
           </button>
         ) : (
-          <button className="rounded-xl bg-blue-600 hover:bg-blue-700 px-24 py-2 text-white">
+          <button className="rounded-xl font-bold bg-[#0d76fd] px-24 py-2 text-white">
             Stake
           </button>
         )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Staking;
