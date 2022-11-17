@@ -1,7 +1,17 @@
-import React from "react";
+import { useState } from "react";
+import { useContractWrite } from "wagmi";
+import ABI from "./abi/rimbafarm.json";
 
 const Staking = () => {
-  const isAuthenticated = true;
+  const [tokenId, setTokenId] = useState(0);
+  const stake = useContractWrite(
+    {
+      addressOrName: "0x34DA7A50dfA77e8aE0aDc05827bA2387eca7682A",
+      contractInterface: ABI,
+    },
+    "stakeRimba",
+    { args: { tokenId } }
+  );
 
   return (
     <div className="items-center p-8 w-96 cursor-pointer rounded-3xl shadow-lg bg-white transition duration-400 ease-in-out hover:scale-105 hover:drop-shadow-2xl">
@@ -10,6 +20,7 @@ const Staking = () => {
       </div>
       <div className="py-6">
         <input
+          onChange={(e) => setTokenId(e.target.value as any)}
           className="
             form-control
             block
@@ -32,15 +43,12 @@ const Staking = () => {
         />
       </div>
       <div className="text-center">
-        {!isAuthenticated ? (
-          <button className="rounded-xl font-bold bg-blue-400 px-24 py-2 text-white">
-            Disconected
-          </button>
-        ) : (
-          <button className="rounded-xl font-bold bg-[#0d76fd] px-24 py-2 text-white">
-            Stake
-          </button>
-        )}
+        <button
+          onClick={stake.write as any}
+          className="rounded-xl font-bold bg-[#0d76fd] px-24 py-2 text-white"
+        >
+          {stake.isLoading ? "Loading.." : "Stake"}
+        </button>
       </div>
     </div>
   );

@@ -1,9 +1,8 @@
-import React from "react";
-import { useContractWrite } from "wagmi";
+import { useContractRead, useContractWrite } from "wagmi";
 import ABI from "./abi/token.json";
 
 const Mint = () => {
-  const { data, isError, isLoading, write } = useContractWrite(
+  const mint = useContractWrite(
     {
       addressOrName: "0xF3780f8A8554906f388E8B2F58733b0Ed1a3831e",
       contractInterface: ABI,
@@ -18,10 +17,10 @@ const Mint = () => {
       </div>
       <div className="text-center">
         <button
-          onClick={write as any}
+          onClick={mint.write as any}
           className="rounded-xl font-bold bg-[#0d76fd] px-24 py-2 text-white"
         >
-          Mint
+          {mint.isLoading ? "Loading..." : "Mint"}
         </button>
       </div>
     </div>

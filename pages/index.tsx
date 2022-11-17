@@ -1,10 +1,10 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Staking from '../components/Staking'
-import Footer from '../components/Footer'
-import Mint from '../components/Mint'
-import Navbar from '../components/Navbar'
-import Teams from '../components/Teams'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Staking from "../components/Staking";
+import Footer from "../components/Footer";
+import Mint from "../components/Mint";
+import Navbar from "../components/Navbar";
+import Teams from "../components/Teams";
 
 const Home: NextPage = () => {
   return (
@@ -16,14 +16,14 @@ const Home: NextPage = () => {
       </Head>
 
       <Navbar />
-      <div className="grid place-items-center py-8 gap-4">
+      <div className="grid place-items-center py-8 gap-4 bg-gradient-to-r from-sky-500 to-indigo-500">
         <Mint />
         <Staking />
       </div>
       <Teams />
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
